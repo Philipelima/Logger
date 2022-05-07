@@ -1,22 +1,15 @@
 {
     "name": "philipelima/logger",
-    "description": "",
-    "keywords": [
-        "Logger",
-        "Log",
-        "File"
-    ],
     "authors": [
         {
-            "name": "Philipe Matheus Lima",
-            "role": "Developer"
+            "name":  "Philipe M. Lima",
+            "email": "philipematheus.lim@gmail.com", 
+            "role":  "Developer"
         }
-         
     ],
-
-    "autoloading": {
+    "autoload":{
         "psr-4": {
-            "Logger\\": "src"
-        }   
+            "Logger\\": "src/"
+        }
     }
 }
