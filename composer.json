@@ -1,5 +1,5 @@
 {
-    "name": "philipelima/Logger",
+    "name": "philipelima/logger",
     "description": "",
     "keywords": [
         "Logger",
@@ -18,8 +18,5 @@
         "psr-4": {
             "Logger\\": "src"
         }   
-    },
-    "require": {
-        "php": ">=php7.4"
     }
 }
