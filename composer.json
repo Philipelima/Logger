@@ -1,0 +1,25 @@
+{
+    "name": "philipelima/Logger",
+    "description": "",
+    "keywords": [
+        "Logger",
+        "Log",
+        "File"
+    ],
+    "authors": [
+        {
+            "name": "Philipe Matheus Lima",
+            "role": "Developer"
+        }
+         
+    ],
+
+    "autoloading": {
+        "psr-4": {
+            "Logger\\": "src"
+        }   
+    },
+    "require": {
+        "php": ">=php7.4"
+    }
+}
