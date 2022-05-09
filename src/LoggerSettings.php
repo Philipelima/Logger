@@ -7,8 +7,7 @@ use Exception;
 class LoggerSettings extends Logger
 {
 
-    private static $acceptedLevels = ['warning', 'info', 'success', 'error'];
-
+    
 
     public static function settings(array $settings = [], $run = true): void
     {
@@ -19,16 +18,6 @@ class LoggerSettings extends Logger
         }
     }
 
-
-    private static function setLevel(string $level): void
-    {
-        $level          = strtoupper($level);
-        $acceptedLevels = self::$acceptedLevels;
-
-        if (in_array($level, $acceptedLevels)) {
-            self::$level = trim($level);
-        }
-    }
 
 
     private static function setPath(string $path): void
@@ -45,4 +34,7 @@ class LoggerSettings extends Logger
             echo $e->getMessage();
         }
     }
+
+
+
 }

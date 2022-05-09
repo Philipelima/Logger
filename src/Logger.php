@@ -10,6 +10,8 @@ Class Logger
 
     protected static string $path;
 
+    private static $acceptedLevels = ['warning', 'info', 'success', 'error'];
+
 
     public function __toString()
     {
@@ -17,6 +19,8 @@ Class Logger
     }
 
 
+
+    
     protected static function startLogger()
     {
         echo PHP_EOL;
@@ -24,5 +28,15 @@ Class Logger
         echo PHP_EOL;
     }
 
+    
+    private static function setLevel(string $level): void
+    {
+        $level          = strtoupper($level);
+        $acceptedLevels = self::$acceptedLevels;
+
+        if (in_array($level, $acceptedLevels)) {
+            self::$level = trim($level);
+        }
+    }
     
 }
