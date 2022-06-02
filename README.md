@@ -1,5 +1,5 @@
 ## LOGGER 
-![](https://img.shields.io/static/v1?label=Made+with&labelColor=07a0f8&message=PHP&color=000000&logo=&logoColor=ffffff&style=square)
+![php](https://img.shields.io/static/v1?label=PHP&labelColor=07a0f8&message=7.*&color=000000&logo=php&logoColor=ffffff&style=flat-square)
 
 
 Create .log file with PHP for application monitoring.
