@@ -12,7 +12,6 @@ class Directory
  
             if(is_dir($logPath)) return true;
 
-
             if(!is_dir($logPath)){
                  mkdir($logPath);
                  return true;
