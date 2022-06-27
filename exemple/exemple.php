@@ -3,9 +3,22 @@
 
 require_once '../vendor/autoload.php';
 
-use Logger\LoggerSettings;
+use Logger\Logger;
+use Logger\Settings\Settings;
 
 /**
- * configure the settings 
+ * settings  for the Logger
+ * 1 - array
  */
-LoggerSettings::settings([]);
+Settings::settings([
+    'path' => realpath(__DIR__.'/../')
+]);
+
+
+Logger::info("Hello, this is a test message.");
+
+Logger::warn("Attention, failed login attempt.");
+
+Logger::success("Success registering user.");
+
+Logger::error("Failed to register user.");
