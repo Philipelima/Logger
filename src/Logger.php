@@ -13,7 +13,7 @@ Class Logger
 
     protected static string $path;
 
-    private static $acceptedLevels = ['WARNING', 'INFO', 'SUCCESS', 'ERROR'];
+    private static $acceptedLevels = ['WARNING', 'INFO', 'SUCCESS', 'ERROR', 'NOTICE'];
 
 
     public function __toString()
@@ -59,6 +59,14 @@ Class Logger
         self::setLevel('error');
         self::saveLogMessage($message);
     }
+
+
+    public static function notice($message): void
+    {
+        self::setLevel('notice');
+        self::saveLogMessage($message);
+    }
+    
     
 
     private static function setLevel(string $level): void
