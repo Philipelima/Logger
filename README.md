@@ -2,3 +2,4 @@
 
 ## LOGGER 
 
+Logger is a library to facilitate the handling of log files.
