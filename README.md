@@ -11,3 +11,8 @@ You can clone this code
 ```git
     https://github.com/Philipelima/Logger.git
 ```
+### By SSH:
+
+```git
+    git@github.com:Philipelima/Logger.git
+```
