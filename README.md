@@ -4,7 +4,7 @@
 
 Logger is a library to facilitate the handling of log files.
 
-You can clone this code.
+You can clone this code
 
 #### By HTTPS:
 
